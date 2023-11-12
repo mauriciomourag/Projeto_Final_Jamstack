@@ -3,7 +3,18 @@
  */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Empresa de Games`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `diary`,
+        path: `${__dirname}/diary`,
+      },
+    },
+    "gatsby-plugin-mdx"
+  ],
 }
+
+
