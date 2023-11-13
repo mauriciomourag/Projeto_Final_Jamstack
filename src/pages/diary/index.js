@@ -21,7 +21,7 @@ const DiaryPage = () => {
 
   return (
     <Layout>
-      <p>Esses são os últimos posts:</p>
+      <p>Últimas Notícias dos Jogos da Empresa de Games:</p>
       <ul>
         {data.allMdx.nodes.map((node) => (
           <article key={node.id}>
@@ -30,7 +30,7 @@ const DiaryPage = () => {
                 {node.frontmatter.title}
               </Link>
             </h2>
-            <p>Postado em {node.frontmatter.date}</p>
+            <p>Update {node.frontmatter.date}</p>
           </article>
         ))}
       </ul>
@@ -38,6 +38,6 @@ const DiaryPage = () => {
   );
 };
 
-export const Head = () => <title>Posts</title>;
+export const Head = () => <title>Diary</title>;
 
 export default DiaryPage;
