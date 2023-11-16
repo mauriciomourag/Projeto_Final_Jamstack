@@ -3,7 +3,9 @@ import Layout from "../components/layout";
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout>      
+      <section className="banner"></section>
+      <h1 index>Nossos Jogos</h1>
       <div class="flexbox">
         <div class="item">
           <div class="content">

@@ -26,7 +26,7 @@ const Form = () => {
   return (
     <Layout>
       <h2>Entre em Contato:</h2>
-      <div className="container">
+      <div className="containerform">
         <form name="form_hook" method="post" onSubmit={handleSubmit(onSubmit)}
           data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="form_hook" />

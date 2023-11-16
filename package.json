@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
+    "bootstrap-icons": "^1.11.1",
     "gatsby": "^5.12.4",
     "gatsby-plugin-mdx": "^5.12.3",
     "gatsby-source-filesystem": "^5.12.1",
