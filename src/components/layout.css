@@ -11,13 +11,15 @@
     height: 98vh;
     display: grid;
     grid: "header" auto "main" 1fr "footer" auto / 1fr;
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(21, 21, 21);
+    color: white;
 } 
 
 
 .main {
     grid-area: main;
     padding: 10px;
+    background-color: rgb(22, 21, 21);
 }
 
 input[type=text], input[type=email], select, textarea {
@@ -42,10 +44,12 @@ input[type=text], input[type=email], select, textarea {
   }
 
   .containerform {
-    width: 400px;
-    border-radius: 5px;
+    border-radius: 7px;
+    color: #000000;
     background-color: #f2f2f2;
-    padding: 20px;
+  width: 30%;
+  padding: 10px;
+    
   } 
 
   .erro {
@@ -54,10 +58,49 @@ input[type=text], input[type=email], select, textarea {
     text-align: right;
   }
 
-  .banner{
+ .banner{
     height: 100vh;
-    background-image: url(../images/game.jpg);
+    background-image: url(../images/game1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .jogos{
+    padding: 20px;
+  }
+
+  .jogos h1 {
+    display: flex;
+    justify-content: center;
+    color: #04AA6D;
+    padding: 20px;
+  }
+
+  .jogos h2{
+    padding: 10px;
+    color: #04AA6D;
+  }
+
+  .about h1{
+    display: flex;
+    justify-content: center ;
+    padding: 20px;
+  }
+
+  .aboutcompany p{
+    display: flex;
+    justify-content: center ;    
+    padding-right: 700px;
+    padding-left: 700px;
+    padding-bottom:50px ;
+    padding-top: 30px;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .aboutus{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
   }

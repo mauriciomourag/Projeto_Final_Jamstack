@@ -12,6 +12,7 @@
   header{
     width: 100%;
     padding: 15px 4%;
+    background-color: white;
   }
 
   header h1{
@@ -22,6 +23,7 @@
   header li {
     display: inline-block;
     margin: 10px 40px;
+    
   }
 
   header li :hover{
@@ -41,3 +43,4 @@
     cursor: pointer;
     transition: .2s;
   }
+  
