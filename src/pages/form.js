@@ -23,7 +23,7 @@ const Form = () => {
       body: encode({ "form-name": "form_hook", ...dados }),
     })
       .then(() => {
-        alert("Em breve daremos um retorno do seu contato. Obrigado!");
+        alert("Mensagem enviada!");
         reset();
       })
       .catch((error) => alert(error));
@@ -31,8 +31,9 @@ const Form = () => {
 
   return (
     <Layout>
-      <h2>Entre em Contato:</h2>
+      <div className="form">
       <div className="containerform">
+      <h2>Entre em Contato:</h2>
         <form
           name="form_hook"
           method="post"
@@ -42,18 +43,18 @@ const Form = () => {
         >
           <input type="hidden" name="form-name" value="form_hook" />
           <label>
-            Nome
+            Nome Completo
             <input
               type="text"
               name="nome"
-              {...register("nome", { required: true, maxLength: 20 })}
+              {...register("nome", { required: true, maxLength: 50 })}
             />
             {errors.nome && errors.nome.type === "required" && (
               <span className="erro">&nbsp;Nome é obrigatório.</span>
             )}
             {errors.nome && errors.nome.type === "maxLength" && (
               <span className="erro">
-                &nbsp;Nome pode ter 20 caracteres no máximo.
+                &nbsp;Nome pode ter 50 caracteres no máximo.
               </span>
             )}
           </label>
@@ -80,11 +81,11 @@ const Form = () => {
             <input
               type="text"
               name="assunto"
-              {...register("assunto", { required: true, maxLength: 100 })}
+              {...register("assunto", { required: true, maxLength: 50 })}
             />
             {errors.assunto && errors.assunto.type === "maxLength" && (
               <span className="erro">
-                &nbsp;Assunto pode ter 100 caracteres no máximo.
+                &nbsp;Assunto pode ter 50 caracteres no máximo.
               </span>
             )}
           </label>
@@ -95,6 +96,7 @@ const Form = () => {
           <input type="submit" value="Enviar" />
           <input type="reset" value="Limpar" />
         </form>
+      </div>
       </div>
     </Layout>
   );

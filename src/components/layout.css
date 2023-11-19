@@ -22,6 +22,27 @@
     background-color: rgb(22, 21, 21);
 }
 
+
+.form{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form h2{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.containerform {
+  border-radius: 7px;
+  color: #000000;
+  background-color: #e3eae1;
+width: 30%;
+padding: 15px;
+  
+} 
 input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 10px;
@@ -43,14 +64,6 @@ input[type=text], input[type=email], select, textarea {
     margin: 5px;
   }
 
-  .containerform {
-    border-radius: 7px;
-    color: #000000;
-    background-color: #f2f2f2;
-  width: 30%;
-  padding: 10px;
-    
-  } 
 
   .erro {
     color: red;
@@ -103,4 +116,43 @@ input[type=text], input[type=email], select, textarea {
     padding: 50px;
     display: flex;
     justify-content: center;
+  }
+
+  .diary{
+    padding: 10px;
+  }
+  .diary h1{
+    padding: 10px;
+  }
+
+  .foto1{
+    height: 40vh;
+    background-image: url(../images/obruxo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .foto2{
+    height: 40vh;
+    background-image: url(../images/cowboy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .foto3{
+    height: 40vh;
+    background-image: url(../images/runnerblade.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .foto4{
+    height: 40vh;
+    background-image: url(../images/imperios.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }

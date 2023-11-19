@@ -21,7 +21,8 @@ const DiaryPage = () => {
 
   return (
     <Layout>
-      <p>Últimas Notícias dos Jogos da Empresa de Games:</p>
+      <div className="diary">
+      <h1>Últimas Notícias dos Jogos da Empresa de Games:</h1>
       <ul>
         {data.allMdx.nodes.map((node) => (
           <article key={node.id}>
@@ -34,6 +35,7 @@ const DiaryPage = () => {
           </article>
         ))}
       </ul>
+      </div>
     </Layout>
   );
 };

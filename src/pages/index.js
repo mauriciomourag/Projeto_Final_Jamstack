@@ -12,36 +12,26 @@ const IndexPage = () => {
           <div class="item">
             <div class="content">
               <h2>O Bruxo</h2>
+              <section className="foto1"></section>
             </div>
           </div>
           <div class="item">
             <div class="content">
-              <p>22222</p>
+            <h2>Cowboy</h2>
+            <section className="foto2"></section>              
               <section className="cowboy"></section>
             </div>
           </div>
           <div class="item">
             <div class="content">
-              <p>33333</p>
+            <h2>Runner Blade</h2>
+              <section className="foto3"></section>
             </div>
           </div>
           <div class="item">
             <div class="content">
-              <p>44444</p>
-              <p>44444</p>
-              <p>44444</p>
-              <p>44444</p>
-              <p>44444</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="content">
-              <p>55555</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="content">
-              <p>66666</p>
+            <h2>Impérios da Terra</h2>
+              <section className="foto4"></section>
             </div>
           </div>
         </div>
